@@ -1,0 +1,124 @@
+{
+  "station": {
+    "currentlyServing": {
+      "ticketNumber": "T-208",
+      "service": "Document Collection & Authentication",
+      "arrivalTime": "10:14 AM",
+      "waitDuration": "14 mins"
+    },
+    "nextInLine": [
+      { "id": "T-209", "service": "Passport Collection", "waitTime": "18m" },
+      { "id": "T-210", "service": "Smart ID Application", "waitTime": "22m" },
+      { "id": "T-211", "service": "Visa Photo Capture", "waitTime": "29m" },
+      { "id": "T-212", "service": "Marriage Certificate", "waitTime": "34m" },
+      { "id": "T-213", "service": "Driver's License", "waitTime": "41m" }
+    ]
+  },
+  "dashboard": {
+    "metrics": {
+      "activeWaiting": { "value": 38, "trend": "+12%" },
+      "avgWaitTime": { "value": "18 Minutes", "trend": "-8m" },
+      "activeTellers": { "value": "6 / 8 Active", "trend": "Stable" },
+      "completedToday": { "value": 142, "trend": "+24" }
+    },
+    "congestionAnalysis": [
+      {
+        "category": "Passport Application & Renewal",
+        "waitingCount": 14,
+        "avgWaitTime": "24m",
+        "activeAllocation": "2 Active",
+        "status": "Urgent"
+      },
+      {
+        "category": "Driver's License Services",
+        "waitingCount": 18,
+        "avgWaitTime": "31m",
+        "activeAllocation": "3 Active",
+        "status": "Moderate"
+      },
+      {
+        "category": "National Identity (Smart ID)",
+        "waitingCount": 4,
+        "avgWaitTime": "8m",
+        "activeAllocation": "1 Active",
+        "status": "Low Wait"
+      },
+      {
+        "category": "Birth & Marriage Certificates",
+        "waitingCount": 2,
+        "avgWaitTime": "5m",
+        "activeAllocation": "1 Active",
+        "status": "Low Wait"
+      }
+    ],
+    "staffAllocation": [
+      {
+        "name": "Sarah Jenkins",
+        "desk": "Desk 04",
+        "ticketsServed": 24,
+        "status": "Serving T-208",
+        "statusCode": "serving"
+      },
+      {
+        "name": "David Kove",
+        "desk": "Desk 01",
+        "ticketsServed": 19,
+        "status": "Available",
+        "statusCode": "available"
+      },
+      {
+        "name": "Amina Yusuf",
+        "desk": "Desk 02",
+        "ticketsServed": 15,
+        "status": "Serving P-302",
+        "statusCode": "serving"
+      },
+      {
+        "name": "John Miller",
+        "desk": "Desk 03",
+        "ticketsServed": 8,
+        "status": "On Break",
+        "statusCode": "break"
+      }
+    ]
+  },
+  "knowledge": {
+    "documents": [
+      {
+        "id": "doc-1",
+        "name": "SOP-Passport-Renewal-v4.pdf",
+        "version": "v4",
+        "pages": 12,
+        "chunks": 48,
+        "uploadDate": "Jan 12, 2026",
+        "status": "Indexed & Grounded",
+        "active": true
+      },
+      {
+        "id": "doc-2",
+        "name": "DHA-SOP-SmartID-Issuance.pdf",
+        "version": "v2",
+        "pages": 8,
+        "chunks": 32,
+        "uploadDate": "Jan 15, 2026",
+        "status": "Indexed & Grounded",
+        "active": true
+      },
+      {
+        "id": "doc-3",
+        "name": "Accepted-Payment-Procedures-v1.docx",
+        "version": "v1",
+        "pages": 3,
+        "chunks": 12,
+        "uploadDate": "Jan 19, 2026",
+        "status": "Indexed & Grounded",
+        "active": true
+      }
+    ],
+    "mockRagResponse": {
+      "source": "SOP-Passport-Renewal-v4.pdf",
+      "score": "94%",
+      "content": "\"...For adult passport renewal, applicants must submit the current original passport, completed DHA-73 application form, certified photocopy of national identity card, and two recent compliant specifications photographs...\""
+    }
+  }
+}

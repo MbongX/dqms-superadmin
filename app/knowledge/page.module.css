@@ -1,0 +1,58 @@
+@reference "../globals.css";
+
+.container {
+    @apply p-6 h-full flex flex-col gap-8;
+}
+
+.header {
+    @apply flex items-center justify-between pb-4 border-b border-surface-border;
+}
+
+.title {
+    @apply text-xl font-bold text-text-primary;
+}
+
+.subtitle {
+    @apply text-sm text-text-secondary mt-1;
+}
+
+.sectionTitle {
+    @apply text-xs font-bold text-text-secondary uppercase tracking-wider mb-4;
+}
+
+.documentGrid {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-4;
+}
+
+.documentHeader {
+    @apply flex flex-col gap-4;
+}
+
+.documentName {
+    @apply text-sm font-bold text-text-primary break-words;
+}
+
+.documentMeta,
+.uploadDate {
+    @apply text-xs text-text-secondary mt-2;
+}
+
+.uploadDate {
+    @apply border-t border-surface-border pt-3;
+}
+
+.retrievalHeader {
+    @apply flex items-center justify-between gap-4;
+}
+
+.retrievalLabel {
+    @apply text-xs uppercase tracking-wider text-slate-400;
+}
+
+.sourceName {
+    @apply text-lg font-semibold text-white mt-3;
+}
+
+.retrievalContent {
+    @apply text-sm leading-6 text-slate-300 mt-3;
+}

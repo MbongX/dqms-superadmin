@@ -1,0 +1,102 @@
+@reference "../globals.css";
+
+.container {
+    @apply p-6 h-full flex flex-col gap-6;
+}
+
+.header {
+    @apply flex items-center justify-between pb-4 border-b border-surface-border;
+}
+
+.headerLeft {
+    @apply flex items-center gap-4;
+}
+
+.deskSelector {
+    @apply flex items-center gap-2 px-4 py-2 bg-white border border-surface-border rounded-lg text-sm font-semibold shadow-sm cursor-pointer hover:bg-surface-hover transition-colors;
+}
+
+.operatorInfo {
+    @apply flex items-center gap-2 text-sm;
+}
+
+.operatorName {
+    @apply font-semibold text-text-primary;
+}
+
+.mainGrid {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-6 flex-1 items-start;
+}
+
+.activeArea {
+    @apply lg:col-span-2 flex flex-col gap-6;
+}
+
+.callNextContainer {
+    @apply bg-sidebar-bg rounded-xl p-10 flex flex-col items-center justify-center relative shadow-card min-h-[200px];
+}
+
+.callNextStatus {
+    @apply absolute top-4 left-4 bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full border border-slate-700 flex items-center gap-2;
+}
+
+.waitingBadge {
+    @apply absolute top-4 right-4 bg-emerald-900/50 text-emerald-400 text-xs px-3 py-1 rounded-full border border-emerald-800/50;
+}
+
+.shortcutText {
+    @apply text-slate-400 text-xs mt-4 font-mono;
+}
+
+.servingHeader {
+    @apply flex justify-between items-start mb-6;
+}
+
+.ticketNumber {
+    @apply text-6xl font-bold text-sidebar-bg tracking-tight;
+    font-family: var(--font-michroma);
+}
+
+.serviceTitle {
+    @apply text-xl font-semibold mt-2;
+}
+
+.arrivalInfo {
+    @apply text-text-secondary text-sm mt-1;
+}
+
+.timerContainer {
+    @apply border border-surface-border rounded-lg p-4 text-center min-w-[120px];
+}
+
+.timerLabel {
+    @apply text-xs text-text-secondary font-semibold uppercase tracking-wider mb-1;
+}
+
+.timerValue {
+    @apply text-3xl font-bold text-amber-600;
+}
+
+.actionRow {
+    @apply flex items-center gap-4 pt-6 border-t border-surface-border border-dashed;
+}
+
+.queueList {
+    @apply flex flex-col gap-3;
+}
+
+.queueItem {
+    @apply flex items-center justify-between p-4 border border-surface-border rounded-lg hover:border-slate-300 transition-colors bg-white;
+}
+
+.queueItemTitle {
+    @apply font-bold text-lg;
+}
+
+.queueItemService {
+    @apply text-sm text-text-secondary;
+}
+
+.queueItemWait {
+    @apply text-sm font-semibold bg-surface-ground px-2 py-1 rounded-md text-text-secondary;
+}

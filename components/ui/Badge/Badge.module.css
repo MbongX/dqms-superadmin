@@ -1,0 +1,54 @@
+@reference "../../../app/globals.css";
+
+.badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border;
+}
+
+/* Status variants style configuration */
+.urgent {
+    @apply bg-red-50 text-red-600 border-red-200;
+}
+
+.moderate {
+    @apply bg-amber-50 text-amber-600 border-amber-200;
+}
+
+.lowWait {
+    @apply bg-emerald-50 text-emerald-700 border-emerald-200;
+}
+
+.inService {
+    @apply bg-amber-100 text-amber-800 border-amber-300;
+}
+
+.neutral {
+    @apply bg-slate-100 text-slate-700 border-slate-200;
+}
+
+.darkSubtle {
+    @apply bg-slate-800 text-slate-300 border-slate-700;
+}
+
+.dot {
+    @apply w-1.5 h-1.5 rounded-full;
+}
+
+.dotUrgent {
+    @apply bg-red-500;
+}
+
+.dotModerate {
+    @apply bg-amber-500;
+}
+
+.dotLowWait {
+    @apply bg-emerald-500;
+}
+
+.dotInService {
+    @apply bg-amber-500;
+}
+
+.dotNeutral {
+    @apply bg-slate-400;
+}

@@ -1,0 +1,57 @@
+@reference "../../../app/globals.css";
+
+.sidebar {
+    @apply w-64 min-h-screen bg-sidebar-bg border-r border-sidebar-border flex flex-col justify-between shrink-0;
+}
+
+.brandHeader {
+    @apply p-6 flex items-center gap-3 border-b border-sidebar-border;
+}
+
+.brandLogo {
+    @apply w-10 h-10 rounded-lg bg-emerald-600 flex items-center justify-center font-bold text-white text-lg font-michroma;
+}
+
+.brandMeta {
+    @apply flex flex-col;
+}
+
+.brandTitle {
+    @apply text-white font-michroma text-sm font-semibold tracking-wide;
+}
+
+.brandSubtitle {
+    @apply text-sidebar-text text-xs tracking-wider;
+}
+
+.navSection {
+    @apply flex-1 px-4 py-6 space-y-1;
+}
+
+.navItem {
+    @apply flex items-center gap-3 px-3.5 py-3 rounded-lg text-sm font-medium text-sidebar-text transition-colors duration-150 hover:bg-sidebar-hover hover:text-white;
+}
+
+.navItemActive {
+    @apply bg-sidebar-active text-white font-semibold;
+}
+
+.userFooter {
+    @apply p-4 border-t border-sidebar-border flex items-center gap-3 bg-[#080d17];
+}
+
+.avatar {
+    @apply w-10 h-10 rounded-full bg-slate-700 overflow-hidden border border-sidebar-border shrink-0 flex items-center justify-center text-white font-semibold text-xs;
+}
+
+.userInfo {
+    @apply flex flex-col min-w-0;
+}
+
+.userName {
+    @apply text-white text-sm font-medium truncate;
+}
+
+.userRole {
+    @apply text-sidebar-text text-xs truncate;
+}

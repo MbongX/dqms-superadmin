@@ -1,0 +1,22 @@
+@reference "../../../app/globals.css";
+/* Dev Note : This css module houses the metric, ticket and tables styling configuration in accordance to the figma desifn */
+.card {
+    @apply bg-white border border-surface-border rounded-xl shadow-card transition-shadow duration-150;
+}
+
+.dark {
+    @apply bg-sidebar-bg border-sidebar-border text-white rounded-xl;
+    box-shadow: var(--shadow-elevated);
+}
+
+.header {
+    @apply px-6 py-4 border-b border-surface-border flex items-center justify-between;
+}
+
+.body {
+    @apply p-6;
+}
+
+.footer {
+    @apply px-6 py-4 border-t border-surface-border bg-slate-50 rounded-b-xl;
+}
